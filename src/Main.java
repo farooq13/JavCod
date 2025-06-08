@@ -1,20 +1,20 @@
 
 
 public class Main {
+    int count = 0;
+
+    public void increase() {
+        count++;
+        System.out.println(count);
+    }
     public static void main(String [] args) {
-        String name = "Faruk";
-        double gpa = 4.62;
-        char grade = 'A';
-        boolean isForSale = false;
+        Main c1 = new Main();
+        Main c2 = new Main();
+        Main c3 = new Main();
 
-        if (!isForSale) {
-            System.out.println("This car is for sale");
-        } else {
-            System.out.println("This car is not for sale");
-        }
+        c1.increase();
+        c2.increase();
+        c3.increase();
 
-        System.out.println("Your name is " + name);
-        System.out.println("Your CGPA is " + gpa);
-        System.out.println("Your grade is " + grade);
     }
 }
